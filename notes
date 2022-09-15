@@ -1,0 +1,16 @@
+"Laravel Rule Object"
+
+Laravel has provided us wit many built-in validations such as "unique, required" and we can use
+them by simply writing the keywords and laravel will recognize it and activate the rules however
+we can also make our own custom rules in laravel and use them in our contollers.
+
+To make the "custom rule object" we need to first run the following command as shown below
+"php artisan make:rule TestRule"
+
+This will make a new directory inside the main app directory
+
+Inside this rule file, we have few things, first is the "passes()" method which has 2 arguments
+called "$attribute" and "$value" and this will return either true or false. There is a second
+function called the "message()" and this is going to send us the error messages if the user did
+not pass the rule/validation.
+
